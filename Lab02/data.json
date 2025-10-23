@@ -1,0 +1,25 @@
+{
+    "chart_title": "Hours Spent Studying Based on Subject ",
+    "data_points": [
+        {
+            "label": "Monday",
+            "value": 2
+        },
+        {
+            "label": "Tuesday",
+            "value": 5
+        },
+        {
+            "label": "Wednesday",
+            "value": 3
+        },
+        {
+            "label": "Thursday",
+            "value": 6
+        },
+        {
+            "label": "Friday",
+            "value": 8
+    }
+  ]
+}
