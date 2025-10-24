@@ -29,7 +29,7 @@ if os.path.exists(csv_file):
     df_csv = pd.read_csv(csv_file)
 else:
     st.error("CSV file not found.")
-json_file = 'data.json'
+json_file = 'Lab02/data.json'
 if os.path.exists(json_file):
     with open(json_file, 'r') as f:
         json_data = json.load(f)
