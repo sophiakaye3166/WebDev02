@@ -24,7 +24,7 @@ st.write("This page displays graphs based on the collected data.")
 st.divider()
 st.header("Load Data")
 
-csv_file = 'data.csv'
+csv_file = 'Lab02/data.csv'
 if os.path.exists(csv_file):
     df_csv = pd.read_csv(csv_file)
 else:
