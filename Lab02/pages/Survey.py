@@ -32,8 +32,8 @@ with st.form("survey_form"):
     if submitted:
        if category_input and value_input:
         new_row = f"{category_input},{value_input}\n"
-        with open("data.csv", "a") as f:
-            if os.path.getsize("data.csv") == 0:
+        with open("Lab02/data.csv", "a") as f:
+            if os.path.getsize("Lab02/data.csv") == 0:
                 f.write("Category,Value\n")
             f.write(new_row)
         st.success("Your data has been submitted!")
@@ -46,9 +46,9 @@ st.divider() # Adds a horizontal line for visual separation.
 st.header("Current Data in CSV")
 
 # Check if the CSV file exists and is not empty before trying to read it.
-if os.path.exists('data.csv') and os.path.getsize('data.csv') > 0:
+if os.path.exists('Lab02/data.csv') and os.path.getsize('Lab02/data.csv') > 0:
     # Read the CSV file into a pandas DataFrame.
-    current_data_df = pd.read_csv('data.csv')
+    current_data_df = pd.read_csv('Lab02/data.csv')
     # Display the DataFrame as a table.
     st.dataframe(current_data_df)
 else:
